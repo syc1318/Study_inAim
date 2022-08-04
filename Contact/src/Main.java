@@ -27,6 +27,10 @@
 각 테스트 케이스에 대해 주어진 전파가 문제에서 제시한 패턴이면 “YES”를 그렇지 않은 경우는 “NO”를 출력한다. 출력 문자열은 모두 대문자로 구성되어 있다.*/
 public class Main {
     public static void main(String[] args) {
-        
+        String[] lst = new String[200];
+        String n = "(10+11)+";
+        if(n.contains("+")){
+
+        }
     }
 }

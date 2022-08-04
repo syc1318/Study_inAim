@@ -1,5 +1,3 @@
 
-;
-Contact.iml,7\c\7cc9b8b94a10182614463c4de0080c8e7081982c
 =
 src/Main.java,9\2\924f089edb4af5ee45c8a9d1129cd28e2b368138
