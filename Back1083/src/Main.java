@@ -40,18 +40,23 @@ import java.util.Scanner;
 
 public class Main {
     public static int[] sort(int[] N, int cnt){
-        for(int i=0; i<N.length; i++){
-            if(i==N.length-1)
-                break;
-            if(N[i] < N[i+1]){
-                int tmp = N[i];
-                N[i] = N[i+1];
-                N[i+1] = tmp;
-                cnt--;
+        for(int j = 0; j < N.length; j++) {
+            for(int i=j; i<N.length; i++){
+                if(i==N.length-1)
+                    break;
+                if(N[i] < N[i+1]){
+                    int tmp = N[i];
+                    N[i] = N[i+1];
+                    N[i+1] = tmp;
+                    cnt--;
+                }
+                if(cnt ==0)
+                    break;
             }
             if(cnt ==0)
                 break;
         }
+
         return N;
     }
     public static void main(String[] args) {
