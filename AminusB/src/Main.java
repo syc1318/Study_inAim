@@ -14,9 +14,13 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
-            int A = scanner.nextInt();
-            int B = scanner.nextInt();
-            System.out.println(A-B);
+//            int A = scanner.nextInt();
+//            int B = scanner.nextInt();
+//            System.out.println(A-B);
+            int N = scanner.nextInt();
+            for(int i = N; i > 0; i--) {
+                System.out.println("*".repeat(i));
+            }
         }
     }
 }
