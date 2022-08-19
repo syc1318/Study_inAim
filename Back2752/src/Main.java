@@ -7,20 +7,15 @@ public class Main {
         N[0] =scanner.nextInt();
         N[1] =scanner.nextInt();
         N[2] =scanner.nextInt();
-        if(N[0]>N[1]){
-            int tmp = N[0];
-            N[0] = N[1];
-            N[1] = tmp;
+        for (int i = 1; i < N.length; i++) {
+            for(int j = 0; j < N.length-i; j++) {
+                if(N[j]>N[j+1]) {
+                    int tmp = N[j];
+                    N[j] = N[j+1];
+                    N[j+1] = tmp;
+                }
+            }
         }
-        if(N[1]>N[2]){
-            int tmp = N[1];
-            N[1] = N[2];
-            N[2] = tmp;
-        }
-        if(N[2]>N[0]){
-            int tmp = N[2];
-            N[2] = N[0];
-            N[0] = tmp;
-        }
+        System.out.println(N[0]+" "+N[1]+" "+N[2]);
     }
 }
