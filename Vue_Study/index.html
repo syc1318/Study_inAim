@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="alert-box" id="alert">알림창
+            <button onclick="onoff()">X</button>
+        </div>
+        <button onclick="onoff()">버튼</button>
+        <script>
+            function onoff(){
+                if(document.getElementById('alert').style.display == 'block'){
+                    document.getElementById('alert').style.display = 'none';
+                }
+                else{
+                    document.getElementById('alert').style.display = 'block';
+                }
+                
+            }
+        </script>
+    </body>
+</html>
